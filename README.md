@@ -5,6 +5,6 @@
 - [x] Hydration error improvments
 - [x] Page/Component level meta-tags
 - [x] Default cache behaviour
-- [ ] Partial prerendering (experimental)
-- [ ] `next/after` (experimental)
-- [ ] Build updates
+- [x] Partial prerendering (experimental)
+- [x] `next/after` (experimental)
+- [x] Build updates

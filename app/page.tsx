@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { unstable_after as after } from "next/server";
 import SubComponent from "./subcomponent";
 import Counter from "./optimizable-counter";
 import BadComponent from "./bad-hydrating-component";
@@ -10,6 +10,10 @@ export default async function Home() {
     cache: "force-cache",
   });
   const { time } = await timeReq.json();
+
+  after(() => {
+    console.log("finished rendering!");
+  });
 
   return (
     <div>
